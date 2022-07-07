@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\AvalonHill.jpg" />
+    <None Remove="Images\Dragonfire.jpg" />
+    <None Remove="Images\DungeonMayhem.jpg" />
+    <None Remove="Images\TombOfAnnihilation.jpg" />
+    <None Remove="Images\Tyrant.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\TombOfAnnihilation.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Expression.Blend.Sdk" Version="1.0.2" />
+    <PackageReference Include="System.Windows.Interactivity.WPF" Version="2.0.20525" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\AvalonHill.jpg" />
+    <Resource Include="Images\Dragonfire.jpg" />
+    <Resource Include="Images\DungeonMayhem.jpg" />
+    <Resource Include="Images\Tyrant.jpg" />
+  </ItemGroup>
+
+</Project>
